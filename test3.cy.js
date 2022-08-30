@@ -8,9 +8,9 @@ it('Klika Praksa', function(){
     
     cy.get('.name').type('Zlatan Ribica')
 
-    cy.get('.email-address').type('ribica.zlatan7@gmail.com')
+    cy.get('.email-address').type('zlatan@mail.com')
         
-    cy.get('.phone-number').type('+38762576875')
+    cy.get('.phone-number').type('+12345678')
 
     cy.get('.file-input-container > .polygot-parent').click()
    
