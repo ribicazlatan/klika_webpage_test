@@ -2,7 +2,7 @@
 it('Klika Praksa', function(){
     cy.visit('https://klika-doo-sarajevo.breezy.hr/')
 
-    cy.get(':nth-child(5) > :nth-child(1) > a > .button-right').click()
+    cy.get(':nth-child(3) > a > .button-right').click()
     
     cy.get('.actions > :nth-child(1) > .polygot-parent').click()
     
@@ -13,6 +13,8 @@ it('Klika Praksa', function(){
     cy.get('.phone-number').type('+12345678')
 
     cy.get('.file-input-container > .polygot-parent').click()
+    cy.get('.file-input-container > .polygot-parent').should('contain','Upload Resume')
+                                                     .should('be.visible')
    
   
     
